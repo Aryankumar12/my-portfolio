@@ -16,22 +16,22 @@ const Hero = () => {
       className="flex flex-col md:flex-row items-center justify-center h-screen sm:h-[95vh] md:h-screen bg-[#eeeeee] px-4" id='home'
     >
       {/* Left Div */}
-      <div className="flex-1 text-center md:text-left p-5 md:ml-20 flex flex-col justify-center space-y-6">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-black">
+      <div className="flex-1 text-center md:text-left p-5 md:ml-20 flex flex-col justify-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-black">
           Aryan Kumar
         </h1>
-        <h2 className="text-lg sm:text-xl md:text-2xl mb-8 text-black">Web Developer</h2>
+        <h2 className="text-xl md:text-2xl mb-8 text-black">Web Developer</h2>
         <div className="space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           {/* Resume Button */}
           <button
-            className="w-full sm:w-auto px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg border-2 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all"
+            className="w-full md:w-auto px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg border-2 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all"
             onClick={handleResumeClick}
           >
             Resume
           </button>
           {/* Contact Me Button */}
           <button
-            className="w-full sm:w-auto px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg border-2 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all"
+            className="w-full md:w-auto px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg border-2 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all"
             onClick={() => document.getElementById("contactus")?.scrollIntoView({ behavior: "smooth" })}
           >
             Contact Me
@@ -45,7 +45,7 @@ const Hero = () => {
           <Image
             src={profilePicture}
             alt='profile-picture'
-            className="rounded-full h-56 w-56 sm:h-64 sm:w-64 md:h-96 md:w-96 object-cover"
+            className="rounded-full h-64 w-64 object-cover sm:h-72 sm:w-72 md:h-96 md:w-96"
           />
         </div>
       </div>
