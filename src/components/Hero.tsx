@@ -4,7 +4,6 @@ import React from 'react'
 import profilePicture from "@/assets/profile_picture.jpg"
 import Image from 'next/image'
 
-
 const handleResumeClick = () => {
   const resumeUrl =
     "https://drive.google.com/file/d/1MU_28cDPsum_yyMnkwiD9oEkX2_3faNy/view?usp=drive_link";
@@ -14,7 +13,7 @@ const handleResumeClick = () => {
 const Hero = () => {
   return (
     <div
-      className="flex flex-col md:flex-row items-center justify-center h-screen bg-[#eeeeee] px-4" id='home'
+      className="flex flex-col md:flex-row items-center justify-center h-screen sm:h-[95vh] md:h-screen bg-[#eeeeee] px-4" id='home'
     >
       {/* Left Div */}
       <div className="flex-1 text-center md:text-left p-5 md:ml-20 flex flex-col justify-center">
