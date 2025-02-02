@@ -17,7 +17,7 @@ const Hero = () => {
     >
       {/* Left Div */}
       <div className="flex-1 text-center md:text-left p-5 md:ml-20 flex flex-col justify-center space-y-6">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-black">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 text-black">
           Aryan Kumar
         </h1>
         <h2 className="text-lg sm:text-xl md:text-2xl mb-8 text-black">Web Developer</h2>
@@ -36,12 +36,19 @@ const Hero = () => {
           >
             Contact Me
           </button>
+          <button
+            className="w-full sm:w-auto px-6 py-3 bg-white text-gray-800 font-semibold rounded-lg border-2 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all md:hidden block"
+            onClick={() => document.getElementById("project")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Projects
+          </button>
+          
         </div>
       </div>
 
       {/* Right Div */}
       <div className="flex-1 flex justify-center items-center p-5 sm:mt-10">
-        <div className="bg-white shadow-[10px_10px_0px_1px_rgba(0,0,0,0.75)] rounded-full p-1">
+        <div className="bg-white shadow-[6px_6px_0px_1px_rgba(0,0,0,0.75)] rounded-full p-1">
           <Image
             src={profilePicture}
             alt='profile-picture'

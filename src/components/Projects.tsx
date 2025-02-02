@@ -3,19 +3,45 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import projectScreenshot1 from "@/assets/project_screenshot1.png";
-import projectScreenshot2 from "@/assets/project_screenshot1.png";
+import projectScreenshot2 from "@/assets/project_screenshot2.png";
+import projectScreenshot3 from "@/assets/project_screenshot3.png";
+import projectScreenshot4 from "@/assets/project_screenshot4.png";
 
 const projects = [
-  { id: 1, image: projectScreenshot1, repoLink: "https://github.com/username/repo1" },
-  { id: 2, image: projectScreenshot2, repoLink: "https://github.com/username/repo2" },
-  { id: 3, image: projectScreenshot2, repoLink: "https://github.com/username/repo3" },
-  { id: 4, image: projectScreenshot2, repoLink: "https://github.com/username/repo4" },
+  { 
+    id: 1, 
+    image: projectScreenshot1, 
+    repoLink: "https://github.com/Aryankumar12/auth", 
+    projectLink: "https://auth-qxy8.onrender.com/login",
+    desc: "A secure authentication system with login and registration functionality."
+  },
+  { 
+    id: 2, 
+    image: projectScreenshot2, 
+    repoLink: "https://github.com/Aryankumar12/growth_mantra", 
+    projectLink: "https://growth-mantra-j32c.vercel.app/",
+    desc: "A platform to track personal growth, goals, and achievements."
+  },
+  { 
+    id: 3, 
+    image: projectScreenshot3, 
+    repoLink: "https://github.com/Aryankumar12/chatapp_2", 
+    projectLink: "https://chatapp-2-bjly.onrender.com/login",
+    desc: "A real-time chat application with messaging features with secure auth"
+  },
+  { 
+    id: 4, 
+    image: projectScreenshot4, 
+    repoLink: "https://github.com/Aryankumar12/PORTFOLIO.IO", 
+    projectLink: "https://portfolio-two-henna-21.vercel.app/",
+    desc: "A personal portfolio website showcasing projects and skills."
+  },
 ];
 
 const Projects = () => {
   return (
     <div className="bg-black min-h-screen p-8" id="project">
-      <h1 className="text-5xl font-bold text-white mb-16 text-center mt-16">Projects</h1>
+      <h1 className="text-5xl font-bold text-white mb-16 text-center mt-14">Projects</h1>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
@@ -29,13 +55,19 @@ const Projects = () => {
                 alt="Project Screenshot"
                 layout="fill"
                 objectFit="cover"
-                className="rounded-t-xl"
+                className="rounded-t-xl border-4 border-black"
               />
             </div>
 
             <div className="p-6 flex flex-col items-center">
+              {/* Project Description */}
+              <p className="text-sm sm:text-base mb-4 text-gray-700">{project.desc}</p>
+              
               <div className="flex space-x-4">
-                <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                <button
+                  className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
+                  onClick={() => window.open(project.projectLink, "_blank")}
+                >
                   View Live
                 </button>
                 <button
