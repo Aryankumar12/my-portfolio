@@ -6,7 +6,7 @@ import projectScreenshot1 from "@/assets/project_screenshot1.png";
 import projectScreenshot2 from "@/assets/project_screenshot2.png";
 import projectScreenshot3 from "@/assets/project_screenshot3.png";
 import projectScreenshot4 from "@/assets/project_screenshot4.png";
-
+import projectScreenshot5 from "@/assets/project_screenshot5.png"
 const projects = [
   { 
     id: 1, 
@@ -14,6 +14,13 @@ const projects = [
     repoLink: "https://github.com/Aryankumar12/auth", 
     projectLink: "https://auth-qxy8.onrender.com/login",
     desc: "A secure authentication system with login and registration functionality."
+  },
+  {
+    id: 5, 
+    image: projectScreenshot5, 
+    repoLink: "https://github.com/Aryankumar12/remote-interview-platform", 
+    projectLink: "https://remote-interview-platform-zeta.vercel.app/",
+    desc: "A secure Interview Platform for candidate and interveiwer with editor inbuit."
   },
   { 
     id: 2, 
