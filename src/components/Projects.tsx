@@ -54,7 +54,8 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform transform hover:scale-105 duration-300"
+          className="bg-white shadow-[8px_8px_4px_rgba(0,0,0,0.25),_-8px_8px_4px_rgba(0,0,0,0.25),_0_0_8px_rgba(0,0,0,0.15)] rounded-xl overflow-hidden transition-transform transform hover:scale-105 duration-300"
+
           >
             <div className="relative w-full h-60">
               <Image

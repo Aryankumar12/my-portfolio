@@ -1,13 +1,14 @@
 "use client"
 
 import React, { useState } from 'react'
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState({ message: "", type: "" });
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,15 +43,7 @@ const ContactUs = () => {
       <div className="flex-1 flex flex-col items-center justify-center space-y-6 p-5 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl text-black font-extrabold mb-6 md:mb-8">Contact Me</h1>
         {/* WhatsApp Button */}
-        <a
-          href="https://wa.me/8630412121"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center space-x-3 w-48 sm:w-56 md:w-64 px-8 py-4 bg-white text-gray-800 font-semibold text-base sm:text-lg border-2 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] rounded-lg hover:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-all"
-        >
-          <FaWhatsapp className="text-green-500 text-xl sm:text-2xl" />
-          <span>WhatsApp</span>
-        </a>
+     
         <a
           href="https://github.com/Aryankumar12"
           target="_blank"
