@@ -6,7 +6,8 @@ import projectScreenshot1 from "@/assets/project_screenshot1.png";
 import projectScreenshot2 from "@/assets/project_screenshot2.png";
 import projectScreenshot3 from "@/assets/project_screenshot3.png";
 import projectScreenshot4 from "@/assets/project_screenshot4.png";
-import projectScreenshot5 from "@/assets/project_screenshot5.png"
+import projectScreenshot5 from "@/assets/project_screenshot5.png";
+import projectScreenshot6 from "@/assets/project_screenshot6.png";
 const projects = [
   { 
     id: 1, 
@@ -42,6 +43,13 @@ const projects = [
     repoLink: "https://github.com/Aryankumar12/PORTFOLIO.IO", 
     projectLink: "https://portfolio-two-henna-21.vercel.app/",
     desc: "A personal portfolio website showcasing projects and skills."
+  },
+  { 
+    id: 6, 
+    image: projectScreenshot6, 
+    repoLink: "https://github.com/Aryankumar12/Screenlink", 
+    projectLink: "https://screenlink-tau.vercel.app/",
+    desc: "Built a secure screen recording web app with Google Auth, Firestore, and Cloudinary, enabling instant shareable links and 40% faster video delivery."
   },
 ];
 
