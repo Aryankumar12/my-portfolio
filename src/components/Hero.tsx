@@ -11,7 +11,7 @@ import { Suspense } from "react";
 
 const handleResumeClick = () => {
   const resumeUrl =
-    "https://drive.google.com/file/d/16vPydUklb54cRJ556R6mcZV6s5YoHP7C/view?usp=drive_link";
+    "https://drive.google.com/file/d/1a1K70kFjYvhujVgrkUhmMW2rfxNmL728/view?usp=drive_link";
   window.open(resumeUrl, "_blank");
 };
 
